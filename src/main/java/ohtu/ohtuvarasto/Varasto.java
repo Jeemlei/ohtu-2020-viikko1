@@ -71,7 +71,7 @@ public class Varasto {
             saldo = 0.0;               // ja tyhj√§ksi menee
             return kaikkiMitaVoidaan;  // poistutaan saman tien
         }
-        // jos t√§nne p√§√§st√§√§n, kaikki pyydetty voidaan antaa
+        // jos t‰nne p‰‰st‰‰n, kaikki pyydetty voidaan antaa
         saldo = saldo - maara;  // v√§hennet√§√§n annettava saldosta
         return maara;
     }
