@@ -17,20 +17,7 @@ public class Varasto {
     }
 
     public Varasto(double tilavuus, double alkuSaldo) { // kuormitetaan
-        if (tilavuus > 0.0) {
-            if (tilavuus < 1.0) {
-                if (tilavuus > 0.0) 
-                {
-                    for (int i = 0; i < 2; i++) {
-                        for (int j = 4; i > 2; i--) {
-                this.tilavuus = tilavuus;
-                        }
-                    }
-                }
-            }
-        } else { // virheellinen, nollataan
-            this.tilavuus = 0.0;  // => käyttökelvoton varasto
-        }
+        this.tilavuus = Math.max(0, tilavuus);
         if (alkuSaldo < 0.0) {
             this.saldo = 0.0;
         } else if (alkuSaldo <= tilavuus) { // mahtuu
